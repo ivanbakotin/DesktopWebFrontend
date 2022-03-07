@@ -1,0 +1,25 @@
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.desktop {
+  height: 95vh;
+  background-color: #242121;
+}
+
+.taskbar {
+  height: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #414141;
+}
+/*# sourceMappingURL=index.css.map */
