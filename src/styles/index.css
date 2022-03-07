@@ -1,3 +1,97 @@
+.desktop {
+  height: 95vh;
+  background-color: #242121;
+}
+
+.desktop .program-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5rem;
+  list-style: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 5rem;
+}
+
+.desktop .program-icons .program-icon {
+  cursor: pointer;
+  color: white;
+  font-size: clamp(1rem, 1.5vw, 2rem);
+}
+
+.taskbar {
+  height: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #414141;
+}
+
+.taskbar .right-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+.taskbar .right-side .time {
+  color: white;
+  font-size: clamp(1rem, 2vw, 3rem);
+}
+
+.open-program {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  background-color: #c4cbd8;
+}
+
+.open-program .taskbar-program {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  border-bottom: black solid 1px;
+}
+
+.open-program .taskbar-program button {
+  font-size: clamp(2rem, 2vw, 4rem);
+}
+
+.open-program .taskbar-program button::after {
+  font-size: clamp(2rem, 2vw, 4rem);
+  content: "\00d7";
+}
+
+.notepad {
+  resize: none;
+  height: clamp(15rem, 35vw, 50rem);
+  width: clamp(15rem, 35vw, 50rem);
+  font-size: clamp(2rem, 2vw, 4rem);
+}
+
+.notepad:focus {
+  outline: none;
+}
+
 *, *::after, *::before {
   padding: 0;
   margin: 0;
@@ -34,42 +128,5 @@ body {
 .right-click-menu .menu-commands li:hover {
   color: white;
   background-color: #566337;
-}
-
-.desktop {
-  height: 95vh;
-  background-color: #242121;
-}
-
-.desktop .program-icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 5rem;
-  list-style: none;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 5rem;
-}
-
-.desktop .program-icons .program {
-  cursor: pointer;
-  color: white;
-  font-size: clamp(1rem, 1vw, 2rem);
-}
-
-.taskbar {
-  height: 5vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background-color: #414141;
 }
 /*# sourceMappingURL=index.css.map */

@@ -1,0 +1,21 @@
+.open-program {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: rgb(196, 203, 216);
+
+  .taskbar-program {
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: black solid 1px;
+
+    button {
+      font-size: clamp(2rem, 2vw, 4rem);
+    }
+
+    button::after {
+      font-size: clamp(2rem, 2vw, 4rem);
+      content: "\00d7";
+    }
+  }
+}

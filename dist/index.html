@@ -5,16 +5,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../src/styles/index.css">
-  <script defer src="../src/js/index.js"></script>
+  <script defer src="./main.js"></script>
   <title>Desktop</title>
 </head>
 <body>
 
   <main class="desktop">
     <ul class="program-icons">
-      <li name="computer" data-name="My Computer" class="program">My Computer</li>
-      <li name="paint" class="program">Paint</li>
-      <li name="notepad" class="program">Notepad</li>
+      <li class="program-icon computer-icon">My Computer</li>
+      <li class="program-icon paint-icon">Paint</li>
+      <li class="program-icon notepad-icon">Notepad</li>
     </ul>
   </main>
 
@@ -31,25 +31,45 @@
     </div>
 
     <div class="right-side">
-      <div class="time"></div>
       <ul class="system-shortcuts">
         <li></li>
         <li></li>
         <li></li>
       </ul>
+      <div class="time"></div>
     </div>
   </nav>
 
   <!-- Hidden elements by default -->
 
-  <div style="display: none;" class="program-window"></div>
   <div style="display: none;" class="terminal-window"></div>
+
+  <div style="display: none;" class="open-program notepad-program">
+    <div class="taskbar-program">
+      <div class="close-program">
+        <button></button>
+      </div>
+    </div>
+    <textarea class="notepad"></textarea>
+  </div>
+
+  <div style="display: none;" class="open-program">
+    <div class="taskbar-program">
+      <div class="close-program">Close</div>
+    </div>
+    <div class="paint"></div>
+  </div>
+
+  <div style="display: none;" class="open-program">
+    <div class="taskbar-program"></div>
+    <div class="computer"></div>
+  </div>
 
   <div style="display: none;" class="right-click-menu">
     <ul class="menu-commands">
       <li>Create New Folder</li>
       <li>Create New Document</li>
-      <li name="terminal-icon">Open Terminal</li>
+      <li class="terminal-menu">Open Terminal</li>
       <li>Customization</li>
     </ul>
   </div>

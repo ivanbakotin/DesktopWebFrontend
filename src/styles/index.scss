@@ -1,3 +1,10 @@
+@import "./variables";
+@import "./mixins";
+@import "./desktop";
+@import "./taskbar";
+@import "./program";
+@import "./notepad";
+
 *, *::after, *::before {
   padding: 0;
   margin: 0;
@@ -31,39 +38,6 @@ body {
         color: rgb(255, 255, 255);
         background-color: rgb(86, 99, 55);
       }
-    }
-  }
-}
-
-.desktop {
-  height: 95vh;
-  background-color: rgb(36, 33, 33);
-
-  .program-icons {
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
-    list-style: none;
-    flex-wrap: wrap;
-    padding: 5rem;
-
-    .program {
-      cursor: pointer;
-      color: rgb(255, 255, 255);
-      font-size: clamp(1rem, 1vw, 2rem);
-    }
-  }
-}
-
-.taskbar {
-  height: 5vh;
-  display: flex;
-  justify-content: space-between;
-  background-color: rgb(65, 65, 65);
-
-  .left-side {
-    .start-menu {
-     
     }
   }
 }

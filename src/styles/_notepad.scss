@@ -1,0 +1,10 @@
+.notepad {
+  resize: none;
+  height: clamp(15rem, 35vw, 50rem);
+  width: clamp(15rem, 35vw, 50rem);
+  font-size: clamp(2rem, 2vw, 4rem);
+
+  &:focus {
+    outline: none;
+  }
+}
