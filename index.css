@@ -12,6 +12,27 @@
   background-color: #242121;
 }
 
+.desktop .right-click-menu {
+  position: absolute;
+  background-color: white;
+}
+
+.desktop .right-click-menu .menu-commands {
+  list-style: none;
+}
+
+.desktop .right-click-menu .menu-commands li {
+  padding: 1rem;
+  cursor: pointer;
+  color: #4b4b4b;
+  font-size: clamp(1rem, 1vw, 2rem);
+}
+
+.desktop .right-click-menu .menu-commands li:hover {
+  color: white;
+  background-color: #566337;
+}
+
 .taskbar {
   height: 5vh;
   display: -webkit-box;

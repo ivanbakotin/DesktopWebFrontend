@@ -13,6 +13,27 @@
   .program-icons {
 
   }
+
+  .right-click-menu {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+  
+    .menu-commands {
+      list-style: none;
+
+      li {
+        padding: 1rem;
+        cursor: pointer;
+        color: rgb(75, 75, 75);
+        font-size: clamp(1rem, 1vw, 2rem);
+
+        &:hover {
+          color: rgb(255, 255, 255);
+          background-color: rgb(86, 99, 55);
+        }
+      }
+    }
+  }
 }
 
 .taskbar {
